@@ -34,36 +34,53 @@
   </header>
 
 	  <!-- Main Content -->
-  <main >
+  <main class="flex-grow flex flex-col items-center justify-center p-4">
 
-	  <div>
+  <!-- Responsive Ads Section -->
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
 
-	  <!-- Ads-->
-  <script type="text/javascript">
-	atOptions = {
-		'key' : '86d595490b53de20542964b56ca467e7',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//concurfortunes.com/86d595490b53de20542964b56ca467e7/invoke.js"></script>
-
-
-	<h2>Wait for 10 seconds to open movie page</h2>
-
-		  </div>
-<br>
-	<div>  
-    <div class="bg-white rounded-lg shadow-lg p-8 w-20p text-center">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Redirecting in</h2>
-      <div id="content">
-        <div id="countdown" class="text-6xl font-bold text-primary">10</div>
-      </div>
+    <!-- Ad 1 (Always Visible) -->
+    <div class="flex justify-center">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '86d595490b53de20542964b56ca467e7',
+          'format': 'iframe',
+          'height': 90,
+          'width': 728,
+          'params': {}
+        };
+      </script>
+      <script type="text/javascript" src="//concurfortunes.com/86d595490b53de20542964b56ca467e7/invoke.js"></script>
     </div>
-	</div>
-  </main>
+
+    <!-- Ad 2 (Only visible on medium screens and up) -->
+    <div class="hidden md:flex justify-center">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '86d595490b53de20542964b56ca467e7',
+          'format': 'iframe',
+          'height': 90,
+          'width': 728,
+          'params': {}
+        };
+      </script>
+      <script type="text/javascript" src="//concurfortunes.com/86d595490b53de20542964b56ca467e7/invoke.js"></script>
+    </div>
+  </div>
+
+  <!-- Info Text -->
+  <h2 class="text-lg font-medium text-gray-700 mb-6 text-center">Wait for 10 seconds to open movie page</h2>
+
+  <!-- Countdown Box -->
+  <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md text-center">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Redirecting in</h2>
+    <div id="content">
+      <div id="countdown" class="text-6xl font-bold text-primary">10</div>
+    </div>
+  </div>
+
+</main>
+
 
   <!-- Footer (optional) -->
   <footer class="text-center text-gray-500 text-sm py-4">
