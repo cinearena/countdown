@@ -2,8 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Auto Countdown Redirect</title>
+  <title>Redirecting page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1D4ED8',
+            secondary: '#2563EB',
+            bgGray: '#F3F4F6',
+            channelBg: '#FFFFFF',
+            channelHover: '#E5E7EB',
+            channelActive: '#3B82F6',
+          }
+        }
+      }
+    }
+  </script>
+  
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -45,6 +67,14 @@
   </style>
 </head>
 <body>
+
+   <!-- Header -->
+  <header class="p-4 bg-primary text-white flex justify-center items-center shadow-md">
+    <a href="https://cinearena.live" class="flex items-center space-x-3">
+      <img src="cineheader.png" alt="Cine Arena Header" class="h-12" />
+    </a>
+  </header>
+
   <div class="container">
     <div id="content">
       <div id="countdown">10</div>
